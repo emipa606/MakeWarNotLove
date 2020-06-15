@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <InteractionDef>
+    <defName>RomanceAttempt</defName>
+    <label>romance attempt</label>
+    <workerClass>InteractionWorker_RomanceAttemptMWNL</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/Romance</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>logentry-&gt;Attempted to woo [other_nameShortIndef] into a romance.</li>
+      </rulesStrings>
+    </logRulesInitiator>
+    <logRulesRecipient>
+      <rulesStrings>
+        <li>logentry-&gt;Was wooed by [other_nameShortIndef].</li>
+      </rulesStrings>
+    </logRulesRecipient>
+  </InteractionDef>
+  <InteractionDef>
+    <defName>Breakup</defName>
+    <label>breakup</label>
+    <workerClass>InteractionWorker_BreakupMWNL</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/Breakup</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>logentry-&gt;Broke up with [other_nameShortIndef].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+    <logRulesRecipient>
+      <rulesStrings>
+        <li>logentry-&gt;Was broken up with by [other_nameShortIndef].</li>
+      </rulesStrings>
+    </logRulesRecipient>
+  </InteractionDef>
+  <InteractionDef>
+    <defName>MarriageProposal</defName>
+    <label>marriage proposal</label>
+    <workerClass>InteractionWorker_MarriageProposalMWNL</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/MarriageProposal</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>logentry-&gt;Proposed marriage to [other_nameShortIndef].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+    <logRulesRecipient>
+      <rulesStrings>
+        <li>logentry-&gt;Was proposed to by [other_nameShortIndef].</li>
+      </rulesStrings>
+    </logRulesRecipient>
+  </InteractionDef>
+</Defs>
