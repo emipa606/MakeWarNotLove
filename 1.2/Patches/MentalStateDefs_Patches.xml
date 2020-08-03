@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/MentalBreakDef[defName="GiveUpExit"]/baseCommonality</xpath>
+    <value>
+      <baseCommonality>0</baseCommonality>
+    </value>
+  </Operation>
+</Patch>
