@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Make War Not Love (Continued)</name>
   <packageId>Mlie.MakeWarNotLove</packageId>
@@ -11,7 +11,7 @@
   </supportedVersions>
   <modDependencies />
   <loadAfter />
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Blas88s mod
 Based on an update made by TomaszA2
 https://www.reddit.com/r/RimWorld/comments/9zzcjo/does_make_war_not_love_work_for_10/
@@ -20,16 +20,20 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1984083304
 
 - Replaced all defs with patches
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
 		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
 		[td][url=https://github.com/emipa606/MakeWarNotLove][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
-	[/tr]
+    [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/h5VwTNL.png[/img][/td]
+    [/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 This mod was not made by me, i just reupload it for everyone in need.
 
@@ -38,7 +42,7 @@ This mod gives a great benefit in performance at mid-late game by disable the so
 Source: https://www.reddit.com/r/RimWorld/comments/9zzcjo/does_make_war_not_love_work_for_10/
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -49,4 +53,3 @@ Source: https://www.reddit.com/r/RimWorld/comments/9zzcjo/does_make_war_not_love
 [/list]
 </description>
 </ModMetaData>
-
