@@ -1,14 +1,11 @@
-﻿using Verse;
+using Verse;
 
-namespace RimWorld
+namespace RimWorld;
+
+public class InteractionWorker_ChitchatMWNL : InteractionWorker
 {
-    // Token: 0x02000002 RID: 2
-    public class InteractionWorker_ChitchatMWNL : InteractionWorker
+    public override float RandomSelectionWeight(Pawn initiator, Pawn recipient)
     {
-        // Token: 0x06000001 RID: 1 RVA: 0x00002050 File Offset: 0x00000250
-        public override float RandomSelectionWeight(Pawn initiator, Pawn recipient)
-        {
-            return 0f;
-        }
+        return 0f;
     }
 }

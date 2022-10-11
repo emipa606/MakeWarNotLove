@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="Chitchat" or defName="DeepTalk" or defName="Slighted" or defName="Insulted" or defName="InsultedMood" or defName="KindWords" or defName="KindWordsMood" or defName="HadAngeringFight" or defName="HadCatharticFight" or defName="HarmedMe" or defName="BotchedMySurgery" or defName="RescuedMe" or defName="RecruitedMe" or defName="CrashedTogether" or defName="SoldMyLovedOne" or defName="RebuffedMyRomanceAttempt" or defName="RebuffedMyRomanceAttemptMood" or defName="FailedRomanceAttemptOnMe" or defName="FailedRomanceAttemptOnMeLowOpinionMood" or defName="BrokeUpWithMe" or defName="BrokeUpWithMeMood" or defName="CheatedOnMe" or defName="CheatedOnMeMood" or defName="DivorcedMe" or defName="DivorcedMeMood" or defName="RejectedMyProposal" or defName="RejectedMyProposalMood" or defName="IRejectedTheirProposal" or defName="HoneymoonPhase" or defName="GotSomeLovin" or defName="KilledMyFriend" or defName="KilledMyRival" or defName="KilledMyLover" or defName="KilledMyFiance" or defName="KilledMySpouse" or defName="KilledMyFather" or defName="KilledMyMother" or defName="KilledMySon" or defName="KilledMyDaughter" or defName="KilledMyBrother" or defName="KilledMySister" or defName="KilledMyKin"]/stackLimit</xpath>
+    <value>
+      <stackLimit>0</stackLimit>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="DeepTalk" or defName="Slighted" or defName="Insulted" or defName="InsultedMood" or defName="KindWords" or defName="KindWordsMood" or defName="HadAngeringFight" or defName="HadCatharticFight" or defName="HarmedMe" or defName="BotchedMySurgery" or defName="RescuedMe" or defName="RecruitedMe" or defName="CrashedTogether" or defName="SoldMyLovedOne" or defName="RebuffedMyRomanceAttempt" or defName="RebuffedMyRomanceAttemptMood" or defName="FailedRomanceAttemptOnMe" or defName="FailedRomanceAttemptOnMeLowOpinionMood" or defName="BrokeUpWithMe" or defName="BrokeUpWithMeMood" or defName="CheatedOnMe" or defName="CheatedOnMeMood" or defName="DivorcedMe" or defName="DivorcedMeMood" or defName="RejectedMyProposal" or defName="RejectedMyProposalMood" or defName="IRejectedTheirProposal" or defName="HoneymoonPhase" or defName="GotSomeLovin" or defName="KilledMyFriend" or defName="KilledMyRival" or defName="KilledMyLover" or defName="KilledMyFiance" or defName="KilledMySpouse" or defName="KilledMyFather" or defName="KilledMyMother" or defName="KilledMySon" or defName="KilledMyDaughter" or defName="KilledMyBrother" or defName="KilledMySister" or defName="KilledMyKin"]/durationDays</xpath>
+    <value>
+      <durationDays>0</durationDays>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="Chitchat"]/maxCumulatedOpinionOffset</xpath>
+    <value>
+      <maxCumulatedOpinionOffset>0</maxCumulatedOpinionOffset>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="Chitchat" or defName="DeepTalk" or defName="Slighted" or defName="Insulted" or defName="KindWords" or defName="HadAngeringFight" or defName="HadCatharticFight" or defName="HarmedMe" or defName="BotchedMySurgery" or defName="RescuedMe" or defName="RecruitedMe" or defName="CrashedTogether" or defName="SoldMyLovedOne" or defName="SoldMyBondedAnimal" or defName="ForcedMeToTakeDrugs" or defName="ForcedMeToTakeLuciferium" or defName="RebuffedMyRomanceAttempt" or defName="FailedRomanceAttemptOnMe" or defName="BrokeUpWithMe" or defName="CheatedOnMe" or defName="DivorcedMe" or defName="RejectedMyProposal" or defName="IRejectedTheirProposal" or defName="HoneymoonPhase" or defName="GotSomeLovin" or defName="KilledMyFriend" or defName="KilledMyRival" or defName="KilledMyLover" or defName="KilledMyFiance" or defName="KilledMySpouse" or defName="KilledMyFather" or defName="KilledMyMother" or defName="KilledMySon" or defName="KilledMyDaughter" or defName="KilledMyBrother" or defName="KilledMySister" or defName="KilledMyKin" or defName="Affair" or defName="Disfigured" or defName="TeetotalerVsAddict" or defName="Drunk" or defName="Pretty" or defName="Ugly" or defName="AnnoyingVoice" or defName="CreepyBreathing" or defName="Man" or defName="Woman" or defName="TranshumanistAppreciation" or defName="BodyPuristDisgust" or defName="ButcheredHumanlikeCorpseOpinion" or defName="AteRawHumanlikeMeat" or defName="SoldPrisoner" or defName="ExecutedPrisoner" or defName="KilledColonist" or defName="KilledColonyAnimal"]/stages/li[1]/baseOpinionOffset</xpath>
+    <value>
+      <baseOpinionOffset>0</baseOpinionOffset>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="Pretty" or defName="Ugly" or defName="TranshumanistAppreciation" or defName="BodyPuristDisgust"]/stages/li[2]/baseOpinionOffset</xpath>
+    <value>
+      <baseOpinionOffset>0</baseOpinionOffset>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="TranshumanistAppreciation" or defName="BodyPuristDisgust"]/stages/li[3]/baseOpinionOffset</xpath>
+    <value>
+      <baseOpinionOffset>0</baseOpinionOffset>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="TranshumanistAppreciation" or defName="BodyPuristDisgust"]/stages/li[4]/baseOpinionOffset</xpath>
+    <value>
+      <baseOpinionOffset>0</baseOpinionOffset>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="TranshumanistAppreciation" or defName="BodyPuristDisgust"]/stages/li[5]/baseOpinionOffset</xpath>
+    <value>
+      <baseOpinionOffset>0</baseOpinionOffset>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="InsultedMood" or defName="KindWordsMood" or defName="SoldMyLovedOne" or defName="RebuffedMyRomanceAttemptMood" or defName="FailedRomanceAttemptOnMeLowOpinionMood" or defName="BrokeUpWithMeMood" or defName="CheatedOnMeMood" or defName="DivorcedMeMood" or defName="RejectedMyProposalMood" or defName="GotSomeLovin"]/stages/li[1]/baseMoodEffect</xpath>
+    <value>
+      <baseMoodEffect>0</baseMoodEffect>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="Incestuous"]/thoughtClass</xpath>
+    <value>
+      <thoughtClass>Thought_IncestuousMWNL</thoughtClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="HardWorkerVsLazy"]/thoughtClass</xpath>
+    <value>
+      <thoughtClass>Thought_HardWorkerVsLazyMWNL</thoughtClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="TeetotalerVsChemicalInterest"]/thoughtClass</xpath>
+    <value>
+      <thoughtClass>Thought_TeetotalerVsChemicalInterestMWNL</thoughtClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThoughtDef[defName="ChemicalInterestVsTeetotaler"]/thoughtClass</xpath>
+    <value>
+      <thoughtClass>Thought_ChemicalInterestVsTeetotalerMWNL</thoughtClass>
+    </value>
+  </Operation>
+</Patch>

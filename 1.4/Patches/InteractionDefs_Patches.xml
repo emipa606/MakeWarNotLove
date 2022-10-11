@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="RomanceAttempt"]/workerClass</xpath>
+    <value>
+      <workerClass>InteractionWorker_RomanceAttemptMWNL</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="RomanceAttempt"]/logRulesInitiator/rulesStrings</xpath>
+    <value>
+      <rulesStrings>
+        <li>logentry-&gt;Attempted to woo [other_nameShortIndef] into a romance.</li>
+      </rulesStrings>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="Breakup"]/workerClass</xpath>
+    <value>
+      <workerClass>InteractionWorker_BreakupMWNL</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="Breakup"]/logRulesInitiator/rulesStrings</xpath>
+    <value>
+      <rulesStrings>
+        <li>logentry-&gt;Broke up with [other_nameShortIndef].</li>
+      </rulesStrings>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="Chitchat"]/workerClass</xpath>
+    <value>
+      <workerClass>InteractionWorker_ChitchatMWNL</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="Chitchat"]/logRulesInitiator/rulesStrings</xpath>
+    <value>
+      <rulesStrings>
+        <li>logentry-&gt;Had a nice chat with [other_nameShortIndef].</li>
+      </rulesStrings>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="DeepTalk"]/workerClass</xpath>
+    <value>
+      <workerClass>InteractionWorker_DeepTalkMWNL</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="DeepTalk"]/logRulesInitiator/rulesStrings</xpath>
+    <value>
+      <rulesStrings>
+        <li>logentry-&gt;Had a deep talk with [other_nameShortIndef].</li>
+      </rulesStrings>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="Slight"]/workerClass</xpath>
+    <value>
+      <workerClass>InteractionWorker_SlightMWNL</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="Slight"]/logRulesInitiator/rulesStrings</xpath>
+    <value>
+      <rulesStrings>
+        <li>logentry-&gt;Slighted [other_nameShortIndef].</li>
+      </rulesStrings>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="Insult"]/workerClass</xpath>
+    <value>
+      <workerClass>InteractionWorker_InsultMWNL</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="Insult"]/logRulesInitiator/rulesStrings</xpath>
+    <value>
+      <rulesStrings>
+        <li>logentry-&gt;Insulted [other_nameShortIndef].</li>
+      </rulesStrings>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="KindWords"]/workerClass</xpath>
+    <value>
+      <workerClass>InteractionWorker_KindWordsMWNL</workerClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/InteractionDef[defName="KindWords"]/logRulesInitiator/rulesStrings</xpath>
+    <value>
+      <rulesStrings>
+        <li>logentry-&gt;Said kind words to [other_nameShortIndef].</li>
+      </rulesStrings>
+    </value>
+  </Operation>
+</Patch>
