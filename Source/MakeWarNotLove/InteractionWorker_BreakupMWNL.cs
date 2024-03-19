@@ -19,7 +19,7 @@ public class InteractionWorker_BreakupMWNL : InteractionWorker
     public Thought RandomBreakupReason(Pawn initiator, Pawn recipient)
     {
         var list = (from m in initiator.needs.mood.thoughts.memories.Memories
-            where m != null && m.otherPawn == recipient && m.CurStage != null && m.CurStage.baseOpinionOffset < 0f
+            where m != null && m.otherPawn == recipient && m.CurStage is { baseOpinionOffset: < 0f }
             select m).ToList();
         Thought result;
         if (list.Count == 0)

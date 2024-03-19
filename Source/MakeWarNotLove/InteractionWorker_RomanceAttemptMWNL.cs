@@ -79,7 +79,7 @@ public class InteractionWorker_RomanceAttemptMWNL : InteractionWorker
 
     private void BreakLoverAndFianceRelations(Pawn pawn, out List<Pawn> oldLoversAndFiances)
     {
-        oldLoversAndFiances = new List<Pawn>();
+        oldLoversAndFiances = [];
         for (;;)
         {
             var firstDirectRelationPawn = pawn.relations.GetFirstDirectRelationPawn(PawnRelationDefOf.Lover);
