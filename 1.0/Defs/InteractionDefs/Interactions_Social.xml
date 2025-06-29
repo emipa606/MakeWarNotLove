@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- Random social interactions -->
   <InteractionDef>
@@ -12,7 +12,7 @@
     <recipientThought>Chitchat</recipientThought>
     <logRulesInitiator>
       <rulesStrings>
-        <li>logentry-&gt;Had a nice chat with [other_nameShortIndef].</li>
+        <li>logentry->Had a nice chat with [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesInitiator>
   </InteractionDef>
@@ -27,7 +27,7 @@
     <recipientThought>DeepTalk</recipientThought>
     <logRulesInitiator>
       <rulesStrings>
-        <li>logentry-&gt;Had a deep talk with [other_nameShortIndef].</li>
+        <li>logentry->Had a deep talk with [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesInitiator>
   </InteractionDef>
@@ -40,12 +40,12 @@
     <recipientThought>Slighted</recipientThought>
     <logRulesInitiator>
       <rulesStrings>
-        <li>logentry-&gt;Slighted [other_nameShortIndef].</li>
+        <li>logentry->Slighted [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesInitiator>
     <logRulesRecipient>
       <rulesStrings>
-        <li>logentry-&gt;Was slighted by [other_nameShortIndef].</li>
+        <li>logentry->Was slighted by [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesRecipient>
   </InteractionDef>
@@ -58,12 +58,12 @@
     <recipientThought>Insulted</recipientThought>
     <logRulesInitiator>
       <rulesStrings>
-        <li>logentry-&gt;Insulted [other_nameShortIndef].</li>
+        <li>logentry->Insulted [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesInitiator>
     <logRulesRecipient>
       <rulesStrings>
-        <li>logentry-&gt;Was insulted by [other_nameShortIndef].</li>
+        <li>logentry->Was insulted by [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesRecipient>
   </InteractionDef>
@@ -76,12 +76,12 @@
     <recipientThought>KindWords</recipientThought>
     <logRulesInitiator>
       <rulesStrings>
-        <li>logentry-&gt;Said kind words to [other_nameShortIndef].</li>
+        <li>logentry->Said kind words to [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesInitiator>
     <logRulesRecipient>
       <rulesStrings>
-        <li>logentry-&gt;Had kind words bestowed by [other_nameShortIndef].</li>
+        <li>logentry->Had kind words bestowed by [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesRecipient>
   </InteractionDef>

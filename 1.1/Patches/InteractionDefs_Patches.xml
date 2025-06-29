@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationReplace">
     <xpath>/Defs/InteractionDef[defName="RomanceAttempt"]/workerClass</xpath>
@@ -10,7 +10,7 @@
     <xpath>/Defs/InteractionDef[defName="RomanceAttempt"]/logRulesInitiator/rulesStrings</xpath>
     <value>
       <rulesStrings>
-        <li>logentry-&gt;Attempted to woo [other_nameShortIndef] into a romance.</li>
+        <li>logentry->Attempted to woo [other_nameShortIndef] into a romance.</li>
       </rulesStrings>
     </value>
   </Operation>
@@ -24,7 +24,7 @@
     <xpath>/Defs/InteractionDef[defName="Breakup"]/logRulesInitiator/rulesStrings</xpath>
     <value>
       <rulesStrings>
-        <li>logentry-&gt;Broke up with [other_nameShortIndef].</li>
+        <li>logentry->Broke up with [other_nameShortIndef].</li>
       </rulesStrings>
     </value>
   </Operation>
@@ -38,7 +38,7 @@
     <xpath>/Defs/InteractionDef[defName="Chitchat"]/logRulesInitiator/rulesStrings</xpath>
     <value>
       <rulesStrings>
-        <li>logentry-&gt;Had a nice chat with [other_nameShortIndef].</li>
+        <li>logentry->Had a nice chat with [other_nameShortIndef].</li>
       </rulesStrings>
     </value>
   </Operation>
@@ -52,7 +52,7 @@
     <xpath>/Defs/InteractionDef[defName="DeepTalk"]/logRulesInitiator/rulesStrings</xpath>
     <value>
       <rulesStrings>
-        <li>logentry-&gt;Had a deep talk with [other_nameShortIndef].</li>
+        <li>logentry->Had a deep talk with [other_nameShortIndef].</li>
       </rulesStrings>
     </value>
   </Operation>
@@ -66,7 +66,7 @@
     <xpath>/Defs/InteractionDef[defName="Slight"]/logRulesInitiator/rulesStrings</xpath>
     <value>
       <rulesStrings>
-        <li>logentry-&gt;Slighted [other_nameShortIndef].</li>
+        <li>logentry->Slighted [other_nameShortIndef].</li>
       </rulesStrings>
     </value>
   </Operation>
@@ -80,7 +80,7 @@
     <xpath>/Defs/InteractionDef[defName="Insult"]/logRulesInitiator/rulesStrings</xpath>
     <value>
       <rulesStrings>
-        <li>logentry-&gt;Insulted [other_nameShortIndef].</li>
+        <li>logentry->Insulted [other_nameShortIndef].</li>
       </rulesStrings>
     </value>
   </Operation>
@@ -94,7 +94,7 @@
     <xpath>/Defs/InteractionDef[defName="KindWords"]/logRulesInitiator/rulesStrings</xpath>
     <value>
       <rulesStrings>
-        <li>logentry-&gt;Said kind words to [other_nameShortIndef].</li>
+        <li>logentry->Said kind words to [other_nameShortIndef].</li>
       </rulesStrings>
     </value>
   </Operation>

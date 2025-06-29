@@ -16,7 +16,7 @@ public class InteractionWorker_BreakupMWNL : InteractionWorker
         return 0f;
     }
 
-    public Thought RandomBreakupReason(Pawn initiator, Pawn recipient)
+    private static Thought randomBreakupReason(Pawn initiator, Pawn recipient)
     {
         var list = (from m in initiator.needs.mood.thoughts.memories.Memories
             where m != null && m.otherPawn == recipient && m.CurStage is { baseOpinionOffset: < 0f }
@@ -38,9 +38,10 @@ public class InteractionWorker_BreakupMWNL : InteractionWorker
         return result;
     }
 
-    public virtual void Interacted(Pawn initiator, Pawn recipient, List<RulePackDef> extraSentencePacks)
+    public override void Interacted(Pawn initiator, Pawn recipient, List<RulePackDef> extraSentencePacks,
+        out string letterText, out string letterLabel, out LetterDef letterDef, out LookTargets lookTargets)
     {
-        var thought = RandomBreakupReason(initiator, recipient);
+        var thought = randomBreakupReason(initiator, recipient);
         if (initiator.relations.DirectRelationExists(PawnRelationDefOf.Spouse, recipient))
         {
             initiator.relations.RemoveDirectRelation(PawnRelationDefOf.Spouse, recipient);
@@ -83,5 +84,10 @@ public class InteractionWorker_BreakupMWNL : InteractionWorker
             Find.LetterStack.ReceiveLetter("LetterLabelBreakup".Translate(), stringBuilder.ToString(),
                 LetterDefOf.NegativeEvent, initiator);
         }
+
+        letterText = null;
+        letterLabel = null;
+        letterDef = null;
+        lookTargets = null;
     }
 }

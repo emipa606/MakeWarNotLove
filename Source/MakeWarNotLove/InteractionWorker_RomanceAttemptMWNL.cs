@@ -19,25 +19,26 @@ public class InteractionWorker_RomanceAttemptMWNL : InteractionWorker
         return 0f;
     }
 
-    public float SuccessChance(Pawn initiator, Pawn recipient)
+    private static float successChance(Pawn initiator, Pawn recipient)
     {
         return 0f;
     }
 
-    public virtual void Interacted(Pawn initiator, Pawn recipient, List<RulePackDef> extraSentencePacks)
+    public override void Interacted(Pawn initiator, Pawn recipient, List<RulePackDef> extraSentencePacks,
+        out string letterText, out string letterLabel, out LetterDef letterDef, out LookTargets lookTargets)
     {
-        if (Rand.Value < SuccessChance(initiator, recipient))
+        if (Rand.Value < successChance(initiator, recipient))
         {
-            BreakLoverAndFianceRelations(initiator, out var list);
-            BreakLoverAndFianceRelations(recipient, out var list2);
+            breakLoverAndFianceRelations(initiator, out var list);
+            breakLoverAndFianceRelations(recipient, out var list2);
             foreach (var pawn in list)
             {
-                TryAddCheaterThought(pawn, initiator);
+                tryAddCheaterThought(pawn, initiator);
             }
 
             foreach (var pawn in list2)
             {
-                TryAddCheaterThought(pawn, recipient);
+                tryAddCheaterThought(pawn, recipient);
             }
 
             initiator.relations.TryRemoveDirectRelation(PawnRelationDefOf.ExLover, recipient);
@@ -57,7 +58,7 @@ public class InteractionWorker_RomanceAttemptMWNL : InteractionWorker
                 ThoughtDefOf.FailedRomanceAttemptOnMeLowOpinionMood, initiator);
             if (initiator.IsColonist || recipient.IsColonist)
             {
-                SendNewLoversLetter(initiator, recipient, list, list2);
+                sendNewLoversLetter(initiator, recipient, list, list2);
             }
 
             extraSentencePacks.Add(RulePackDefOf.Sentence_RomanceAttemptAccepted);
@@ -75,9 +76,14 @@ public class InteractionWorker_RomanceAttemptMWNL : InteractionWorker
 
             extraSentencePacks.Add(RulePackDefOf.Sentence_RomanceAttemptRejected);
         }
+
+        letterText = null;
+        letterLabel = null;
+        letterDef = null;
+        lookTargets = null;
     }
 
-    private void BreakLoverAndFianceRelations(Pawn pawn, out List<Pawn> oldLoversAndFiances)
+    private static void breakLoverAndFianceRelations(Pawn pawn, out List<Pawn> oldLoversAndFiances)
     {
         oldLoversAndFiances = [];
         for (;;)
@@ -104,7 +110,7 @@ public class InteractionWorker_RomanceAttemptMWNL : InteractionWorker
         }
     }
 
-    private void TryAddCheaterThought(Pawn pawn, Pawn cheater)
+    private static void tryAddCheaterThought(Pawn pawn, Pawn cheater)
     {
         if (!pawn.Dead)
         {
@@ -112,7 +118,7 @@ public class InteractionWorker_RomanceAttemptMWNL : InteractionWorker
         }
     }
 
-    private void SendNewLoversLetter(Pawn initiator, Pawn recipient, List<Pawn> initiatorOldLoversAndFiances,
+    private static void sendNewLoversLetter(Pawn initiator, Pawn recipient, List<Pawn> initiatorOldLoversAndFiances,
         List<Pawn> recipientOldLoversAndFiances)
     {
         var result = false;

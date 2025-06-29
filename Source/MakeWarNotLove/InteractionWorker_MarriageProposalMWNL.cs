@@ -17,7 +17,8 @@ public class InteractionWorker_MarriageProposalMWNL : InteractionWorker
         return 0f;
     }
 
-    public virtual void Interacted(Pawn initiator, Pawn recipient, List<RulePackDef> extraSentencePacks)
+    public override void Interacted(Pawn initiator, Pawn recipient, List<RulePackDef> extraSentencePacks,
+        out string letterText, out string letterLabel, out LetterDef letterDef, out LookTargets lookTargets)
     {
         var num = AcceptanceChance(initiator, recipient);
         var brokeUp = false;
@@ -55,16 +56,21 @@ public class InteractionWorker_MarriageProposalMWNL : InteractionWorker
 
         if (initiator.IsColonist || recipient.IsColonist)
         {
-            SendLetter(initiator, recipient, Rand.Value < num, brokeUp);
+            sendLetter(initiator, recipient, Rand.Value < num, brokeUp);
         }
+
+        letterText = null;
+        letterLabel = null;
+        letterDef = null;
+        lookTargets = null;
     }
 
-    public float AcceptanceChance(Pawn initiator, Pawn recipient)
+    private static float AcceptanceChance(Pawn initiator, Pawn recipient)
     {
         return 0f;
     }
 
-    private void SendLetter(Pawn initiator, Pawn recipient, bool accepted, bool brokeUp)
+    private static void sendLetter(Pawn initiator, Pawn recipient, bool accepted, bool brokeUp)
     {
         var stringBuilder = new StringBuilder();
         string text;

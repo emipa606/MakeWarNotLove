@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <InteractionDef>
     <defName>RomanceAttempt</defName>
@@ -7,12 +7,12 @@
     <symbol>Things/Mote/SpeechSymbols/Romance</symbol>
     <logRulesInitiator>
       <rulesStrings>
-        <li>logentry-&gt;Attempted to woo [other_nameShortIndef] into a romance.</li>
+        <li>logentry->Attempted to woo [other_nameShortIndef] into a romance.</li>
       </rulesStrings>
     </logRulesInitiator>
     <logRulesRecipient>
       <rulesStrings>
-        <li>logentry-&gt;Was wooed by [other_nameShortIndef].</li>
+        <li>logentry->Was wooed by [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesRecipient>
   </InteractionDef>
@@ -23,12 +23,12 @@
     <symbol>Things/Mote/SpeechSymbols/Breakup</symbol>
     <logRulesInitiator>
       <rulesStrings>
-        <li>logentry-&gt;Broke up with [other_nameShortIndef].</li>
+        <li>logentry->Broke up with [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesInitiator>
     <logRulesRecipient>
       <rulesStrings>
-        <li>logentry-&gt;Was broken up with by [other_nameShortIndef].</li>
+        <li>logentry->Was broken up with by [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesRecipient>
   </InteractionDef>
@@ -39,12 +39,12 @@
     <symbol>Things/Mote/SpeechSymbols/MarriageProposal</symbol>
     <logRulesInitiator>
       <rulesStrings>
-        <li>logentry-&gt;Proposed marriage to [other_nameShortIndef].</li>
+        <li>logentry->Proposed marriage to [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesInitiator>
     <logRulesRecipient>
       <rulesStrings>
-        <li>logentry-&gt;Was proposed to by [other_nameShortIndef].</li>
+        <li>logentry->Was proposed to by [other_nameShortIndef].</li>
       </rulesStrings>
     </logRulesRecipient>
   </InteractionDef>
