@@ -3,4 +3,16 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="MakeWarNotLove/MakeWarNotLove.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/1.7/Patches/">
+    <File Path="../1.7/Patches/InteractionDefs_Patches.xml" />
+    <File Path="../1.7/Patches/MentalStateDefs_Patches.xml" />
+    <File Path="../1.7/Patches/PawnRelationDefs_Patches.xml" />
+    <File Path="../1.7/Patches/ThoughtDefs_Patches.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
 </Solution>
